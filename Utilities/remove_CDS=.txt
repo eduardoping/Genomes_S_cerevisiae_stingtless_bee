@@ -1,0 +1,4 @@
+remnove -CDS=
+
+sed 's/-CDS=1-....//g' Protein_Mcaribbica.fasta > Protein_Mcaribbica_n.fasta
+sed 's/-CDS=1-...//g' Protein_Mcaribbican.fasta > Protein_Mcaribbica_n2.fasta

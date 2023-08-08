@@ -1,0 +1,2 @@
+file	free	dip	tri	tet	d_dip	d_tri	d_tet
+denoise_base_IP9-ID=chromosome:VIII;Alias=BK006934.2.bin.bin	818.650605	663.905601	265.582006	534.444081	154.745004	553.068599	284.206525

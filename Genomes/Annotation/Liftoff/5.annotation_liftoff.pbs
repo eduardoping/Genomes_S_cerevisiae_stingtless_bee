@@ -1,0 +1,21 @@
+#!/bin/bash
+ 
+#Diretivas PBS. Especificam recursos que serao utilizados pelo job
+ 
+#PBS -N patch_ragtag
+#PBS -l nodes=1:ppn=23,mem=23gb
+###PBS #-q #high_mem
+#PBS -m bea
+#PBS -M mauricio.moura@ufv.br
+ 
+#Altera o diretorio corrente para o diretorio de onde foi submetido o script
+cd $PBS_O_WORKDIR 
+ 
+#Habilita o carregamento de modulos
+source /etc/profile.d/modules.sh 
+module load liftoff/1.6.3
+ 
+#Carregar os softwares que serao utilizados
+liftoff Kmarx_CCT7735_genome.fasta GCF_001417885.1_Kmar_1.0_genomic.fasta -g GCF_001417885.1_Kmar_1.0_genomic.gff -dir 5.annotation_liftoff -o Kmarx_CCT7735_annotation.gff -p 23
+
+#Fim do script

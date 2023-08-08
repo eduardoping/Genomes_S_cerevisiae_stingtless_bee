@@ -1,0 +1,13 @@
+
+final diploid loglik: 12364.745248
+     sd1 = 0.124084
+
+final triploid loglik: 5653.778132
+     sd1 = 0.149444
+     sd2 = 0.151622
+
+final tetraploid loglik: 10430.670648
+     sd1 = 0.042357
+     sd2 = 0.047309
+     sd3 = 0.040268
+

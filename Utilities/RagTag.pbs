@@ -1,0 +1,28 @@
+#!/bin/bash
+ 
+#Diretivas PBS. Especificam recursos que serao utilizados pelo job 
+ 
+#PBS -N RagTag_Eduardo 
+#PBS -l nodes=1:ppn=2,mem=8gb,walltime=72:00:00
+#PBS -q qtime
+#PBS -m ae
+#mensagem sera enviada: a – abort; b – begin; e – end 
+#PBS -M eduardo.menezes@ufv.br 
+ 
+cd $PBS_O_WORKDIR 
+ 
+#Habilita o carregamento de modulos
+source /etc/profile.d/modules.sh 
+ 
+#Carrega os modulos
+module load python/3.7.4 
+module load minimap2/2.18r1015
+module load ragtag/2.1.0
+
+#Os comandos a serem executados. O seu roteiro propriamente dito.
+#Comandos a partir daqui
+
+#ragtag.py correct Ref_R64.fasta JP14_correct.fasta
+ragtag.py scaffold Ref_R64.fasta JP14_correct.fasta
+
+#Fim do Script

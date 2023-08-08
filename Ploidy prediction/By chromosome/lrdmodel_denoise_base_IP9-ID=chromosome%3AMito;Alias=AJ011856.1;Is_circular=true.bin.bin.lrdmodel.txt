@@ -1,0 +1,2 @@
+file	free	dip	tri	tet	d_dip	d_tri	d_tet
+denoise_base_IP9-ID=chromosome:Mito;Alias=AJ011856.1;Is_circular=true.bin.bin	500.423961	-5.502857	152.942494	447.871711	505.926818	347.481467	52.552250

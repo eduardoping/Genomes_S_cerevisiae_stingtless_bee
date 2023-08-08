@@ -1,0 +1,25 @@
+#!/bin/bash
+ 
+#Diretivas PBS. Especificam recursos que serao utilizados pelo job 
+ 
+#PBS -N Busco_IP9 
+#PBS -l nodes=1:ppn=23,mem=20gb,walltime=72:00:00
+#PBS -q qtime
+#PBS -m ae
+#mensagem sera enviada: a – abort; b – begin; e – end 
+#PBS -M eduardo.menezes@ufv.br 
+ 
+cd $PBS_O_WORKDIR 
+ 
+#Habilita o carregamento de modulos
+source /etc/profile.d/modules.sh 
+ 
+#Carrega os modulos
+module load busco/5.0.0
+
+#Os comandos a serem executados. O seu roteiro propriamente dito.
+#Comandos a partir daqui
+
+busco -i SC_IP9.fasta -l saccharomycetes_odb10 -m geno -o busco_out_IP9 -c 23
+
+#Fim do Script

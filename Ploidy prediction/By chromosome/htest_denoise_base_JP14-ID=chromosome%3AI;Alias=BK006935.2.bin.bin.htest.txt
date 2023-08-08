@@ -1,0 +1,15 @@
+Diploid:
+   Norm SSR: 0.0584765
+  y-y slope: -0.0427964, with std.Err: 0.0795704
+        r^2: 0.00487906
+
+Triploid:
+   Norm SSR: 0.0386353
+  y-y slope: -0.124821, with std.Err: 0.114955
+        r^2: 0.0195919
+
+Tetraploid:
+   Norm SSR: 0.0204132
+  y-y slope: 0.154521, with std.Err: 0.179589
+        r^2: 0.0123921
+

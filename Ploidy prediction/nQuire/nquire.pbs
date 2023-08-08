@@ -1,0 +1,63 @@
+#!/bin/bash
+ 
+#Diretivas PBS. Especificam recursos que serao utilizados pelo job 
+ 
+#PBS -N Bora 
+#PBS -l nodes=1:ppn=23,mem=20gb,walltime=72:00:00
+#PBS -q qtime
+#PBS -m ae
+#mensagem sera enviada: a – abort; b – begin; e – end 
+#PBS -M eduardo.menezes@ufv.br 
+ 
+cd $PBS_O_WORKDIR 
+ 
+#Habilita o carregamento de modulos
+source /etc/profile.d/modules.sh 
+ 
+#Carrega os modulos
+module load  n-quire/a990a88 
+
+#Os comandos a serem executados. O seu roteiro propriamente dito.
+#Comandos a partir daqui
+
+#https://github.com/clwgg/nQuire
+
+#Create .bin
+
+#nQuire create -b markdup_JP14.bam -o base_JP14
+#nQuire create -b markdup_IP9.bam -o base_IP9
+
+
+#Vizualization of .bin
+
+#nQuire histo base_JP14.bin > histo_JP14
+#nQuire histo base_IP9.bin > histo_IP9
+
+#nQuire view base_JP14.bin > view_JP14
+#nQuire view base_IP9.bin > view_IP9	
+
+#Denoise
+
+#nQuire denoise base_JP14.bin -o base_denoised_JP14
+#nQuire denoise base_IP9.bin -o base_denoised_IP9
+
+#nQuire histo base_denoised_JP14.bin > histo_JP14_denoised
+#nQuire histo base_denoised_IP9.bin > histo_IP9_denoised
+
+
+#lrmodel
+
+#nQuire lrdmodel base_denoised_JP14.bin > lrdmodel_JP14 
+#nQuire lrdmodel base_denoised_IP9.bin > lrdmodel_IP9
+
+#nQuire modeltest base_denoised_JP14.bin > model_test_JP14
+#nQuire modeltest base_denoised_IP9.bin > model_test_IP9
+
+
+nQuire histotest base_denoised_JP14.bin > histo_test_JP14
+nQuire histotest base_denoised_IP9.bin > histo_test_IP9
+
+
+nQuire histotest 
+
+#Fim do Script

@@ -1,0 +1,2 @@
+>NC_0012241_RagTag
+trnF -trnH_1 trnV cox3 trnM_1 trnP rrnS trnW cox1_0-a giy cox1_2 cox1_0-b lagli_1 cox1_1 cox1_0-c atp8 atp6 lagli_5-a trnE cob_0-a lagli_4 lagli_2 lagli_0 cob_1 cob_0-b atp9 rps3_1 trnS2 rps3_0 rrnL trnT trnC trnH_0 trnL2 trnQ trnK trnR_0 trnG trnD trnS1 trnR_1 trnA trnI trnY trnN trnM_0 cox2 lagli_3 lagli_5-b 

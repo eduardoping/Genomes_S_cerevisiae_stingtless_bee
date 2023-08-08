@@ -1,0 +1,25 @@
+#!/bin/bash
+ 
+#Diretivas PBS. Especificam recursos que serao utilizados pelo job 
+ 
+#PBS -N JP14_spades_uc_Eduardo 
+#PBS -l nodes=1:ppn=23,mem=20gb,walltime=72:00:00
+#PBS -q qtime
+#PBS -m ae
+#mensagem sera enviada: a – abort; b – begin; e – end 
+#PBS -M eduardo.menezes@ufv.br 
+ 
+cd $PBS_O_WORKDIR 
+ 
+#Habilita o carregamento de modulos
+source /etc/profile.d/modules.sh 
+ 
+#Carrega os modulos
+module load spades/3.15.2
+
+#Os comandos a serem executados. O seu roteiro propriamente dito.
+#Comandos a partir daqui
+
+spades.py --careful --untrusted-contigs Ref_R64.fa  -t 23  -o Assembly_JP14 -1 Reads_JP14_1.fq -2 Reads_JP14_2.fq
+
+#Fim do Script

@@ -1,0 +1,2 @@
+file	free	dip	tri	tet	d_dip	d_tri	d_tet
+denoise_base_JP14-ID=chromosome:Mito;Alias=AJ011856.1;Is_circular=true.bin.bin	343.598730	91.733679	222.274568	244.294167	251.865052	121.324163	99.304563

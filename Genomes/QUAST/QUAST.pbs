@@ -1,0 +1,25 @@
+#!/bin/bash
+ 
+#Diretivas PBS. Especificam recursos que serao utilizados pelo job 
+ 
+#PBS -N quast_eduardo 
+#PBS -l nodes=1:ppn=2,mem=8gb,walltime=72:00:00
+#PBS -q qtime
+#PBS -m ae
+#mensagem sera enviada: a – abort; b – begin; e – end 
+#PBS -M eduardo.menezes@ufv.br 
+ 
+cd $PBS_O_WORKDIR 
+ 
+#Habilita o carregamento de modulos
+source /etc/profile.d/modules.sh 
+ 
+#Carrega os modulos
+module load quast/5.0.2
+ 
+#Os comandos a serem executados. O seu roteiro propriamente dito.
+#Comandos a partir daqui
+
+quast.py S_cerevisiae_R64.fa S_cerevisiae_IP9.fa S_cerevisiae_JP14.fa 
+
+#Fim do Scrit

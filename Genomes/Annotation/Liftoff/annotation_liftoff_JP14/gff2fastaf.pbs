@@ -1,0 +1,22 @@
+#!/bin/bash
+ 
+#Diretivas PBS. Especificam recursos que serao utilizados pelo job
+ 
+#PBS -N gff2fasta_JP14
+#PBS -l nodes=1:ppn=23,mem=23gb
+###PBS #-q #high_mem
+#PBS -m bea
+#PBS -M eduardo.menezes@ufv.br
+ 
+#Altera o diretorio corrente para o diretorio de onde foi submetido o script
+cd $PBS_O_WORKDIR 
+ 
+#Habilita o carregamento de modulos
+source /etc/profile.d/modules.sh 
+module load gffread/0.12.7
+ 
+#Carregar os softwares que serao utilizados
+gffread -w CDS_JP14.fasta -g SC_JP14.fasta JP14_annotation.gff
+
+
+#Fim do script

@@ -1,0 +1,179 @@
+>Feature NC_0012241_RagTag
+662	735	gene
+			gene	trnM_0(cat)
+662	735	tRNA
+			product	tRNA-MET
+1951	2706	gene
+			gene	cox2
+1951	2706	CDS
+			product	cytochrome c oxidase subunit 2
+2955	3068	gene
+			gene	lagli_1-a
+2955	3068	CDS
+			product	LAGLIDADG endonuclease
+3167	3532	gene
+			gene	lagli_1-b
+3167	3532	CDS
+			product	LAGLIDADG endonuclease
+5815	5886	gene
+			gene	trnF(gaa)
+5815	5886	tRNA
+			product	tRNA-PHE
+6590	6519	gene
+			gene	trnH_1(---)
+6590	6519	tRNA
+			product	tRNA-HIS
+6961	7033	gene
+			gene	trnV(tac)
+6961	7033	tRNA
+			product	tRNA-VAL
+7643	8452	gene
+			gene	cox3
+7643	8452	CDS
+			product	cytochrome c oxidase subunit 3
+13040	13112	gene
+			gene	trnM_1(cat)
+13040	13112	tRNA
+			product	tRNA-MET
+14359	14430	gene
+			gene	trnP(tgg)
+14359	14430	tRNA
+			product	tRNA-PRO
+20081	21704	gene
+20081	21704	rRNA
+			product	s-rRNA
+23079	23149	gene
+			gene	trnW(tca)
+23079	23149	tRNA
+			product	tRNA-TRP
+27445	27648	gene
+			gene	cox1-a
+27445	27648	CDS
+			product	cytochrome c oxidase subunit 1
+28264	29958	gene
+			gene	giy
+28264	29958	CDS
+			product	GIY endonuclease
+30257	30427	gene
+			gene	lagli_4
+30257	30427	CDS
+			product	LAGLIDADG endonuclease
+30445	31104	gene
+			gene	lagli_2
+30445	31104	CDS
+			product	LAGLIDADG endonuclease
+31146	31202	gene
+			gene	lagli_1-c
+31146	31202	CDS
+			product	LAGLIDADG endonuclease
+31812	33176	gene
+			gene	cox1-b
+31812	33176	CDS
+			product	cytochrome c oxidase subunit 1
+34132	34278	gene
+			gene	atp8
+34132	34278	CDS
+			product	ATP synthase F0 subunit 8
+34979	35758	gene
+			gene	atp6
+34979	35758	CDS
+			product	ATP synthase F0 subunit 6
+36106	37263	gene
+			gene	lagli_3
+36106	37263	CDS
+			product	LAGLIDADG endonuclease
+43280	43351	gene
+			gene	trnE(ttc)
+43280	43351	tRNA
+			product	tRNA-GLU
+44444	45202	gene
+			gene	cob_0
+44444	45202	CDS
+			product	cytochrome b
+45395	46360	gene
+			gene	lagli_0
+45395	46360	CDS
+			product	LAGLIDADG endonuclease
+46617	46667	gene
+			gene	cob_2
+46617	46667	CDS
+			product	cytochrome b
+47308	47715	gene
+			gene	cob_1
+47308	47715	CDS
+			product	cytochrome b
+50952	51182	gene
+			gene	atp9
+50952	51182	CDS
+			product	ATP synthase F0 subunit 9
+52313	52399	gene
+			gene	trnS2(tga)
+52313	52399	tRNA
+			product	tRNA-SER2
+53007	54227	gene
+			gene	rps3
+53007	54227	CDS
+			product	Ribosomal protein S3
+62097	65127	gene
+62097	65127	rRNA
+			product	l-rRNA
+66491	66563	gene
+			gene	trnT(tgt)
+66491	66563	tRNA
+			product	tRNA-THR
+67049	67121	gene
+			gene	trnC(gca)
+67049	67121	tRNA
+			product	tRNA-CYS
+67230	67300	gene
+			gene	trnH_0(gtg)
+67230	67300	tRNA
+			product	tRNA-HIS
+68745	68826	gene
+			gene	trnL2(taa)
+68745	68826	tRNA
+			product	tRNA-LEU2
+68860	68932	gene
+			gene	trnQ(ttg)
+68860	68932	tRNA
+			product	tRNA-GLN
+69706	69777	gene
+			gene	trnK(ttt)
+69706	69777	tRNA
+			product	tRNA-LYS
+69948	70020	gene
+			gene	trnR_0(tct)
+69948	70020	tRNA
+			product	tRNA-ARG
+70105	70176	gene
+			gene	trnG(tcc)
+70105	70176	tRNA
+			product	tRNA-GLY
+70969	71040	gene
+			gene	trnD(gtc)
+70969	71040	tRNA
+			product	tRNA-ASP
+71903	71985	gene
+			gene	trnS1(gct)
+71903	71985	tRNA
+			product	tRNA-SER1
+71989	72059	gene
+			gene	trnR_1(acg)
+71989	72059	tRNA
+			product	tRNA-ARG
+72558	72630	gene
+			gene	trnA(tgc)
+72558	72630	tRNA
+			product	tRNA-ALA
+72874	72946	gene
+			gene	trnI(gat)
+72874	72946	tRNA
+			product	tRNA-ILE
+73563	73647	gene
+			gene	trnY(gta)
+73563	73647	tRNA
+			product	tRNA-TYR
+74195	74266	gene
+			gene	trnN(gtt)
+74195	74266	tRNA
+			product	tRNA-ASN

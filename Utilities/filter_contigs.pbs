@@ -1,0 +1,29 @@
+#!/bin/bash
+ 
+#Diretivas PBS. Especificam recursos que serao utilizados pelo job 
+ 
+#PBS -N filter_con 
+#PBS -l nodes=1:ppn=23,mem=20gb,walltime=72:00:00
+#PBS -q qtime
+#PBS -m ae
+#mensagem sera enviada: a – abort; b – begin; e – end 
+#PBS -M eduardo.menezes@ufv.br 
+ 
+cd $PBS_O_WORKDIR 
+ 
+#Habilita o carregamento de modulos
+source /etc/profile.d/modules.sh 
+ 
+#Carrega os modulos
+module load ncbi-blast/2.13.0+ 
+module load seqkit/0.14.0 
+
+
+#Os comandos a serem executados. O seu roteiro propriamente dito.
+#Comandos a partir daqui
+
+#seqkit seq -m 1000 SC_JP14.fa > SC_JP14_filtered.fa
+
+
+
+#Fim do Script

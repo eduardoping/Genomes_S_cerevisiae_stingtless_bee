@@ -1,0 +1,2 @@
+file	free	dip	tri	tet	d_dip	d_tri	d_tet
+denoise_base_JP14-ID=chromosome:XIV;Alias=BK006947.3.bin.bin	199.154287	27.161283	117.662344	185.361397	171.993005	81.491944	13.792890
