@@ -1,0 +1,28 @@
+#!/bin/bash
+ 
+#Diretivas PBS. Especificam recursos que serao utilizados pelo job 
+ 
+#PBS -N Bora 
+#PBS -l nodes=1:ppn=23,mem=20gb,walltime=72:00:00
+#PBS -q qtime
+#PBS -m ae
+#mensagem sera enviada: a – abort; b – begin; e – end 
+#PBS -M eduardo.menezes@ufv.br 
+ 
+cd $PBS_O_WORKDIR 
+ 
+#Habilita o carregamento de modulos
+source /etc/profile.d/modules.sh 
+ 
+#Carrega os modulos
+module load spades/3.15.2
+
+#Os comandos a serem executados. O seu roteiro propriamente dito.
+#Comandos a partir daqui
+
+spades.py --careful -t 23  -o Unmmapped_JP14 -1 unmapped_JP14_R1.fastq -2 unmapped_JP14_R2.fastq
+
+spades.py --careful -t 23  -o Unmmapped_IP9 -1 unmapped_IP9_R1.fastq -2 unmapped_IP9_R2.fastq
+
+
+#Fim do Script

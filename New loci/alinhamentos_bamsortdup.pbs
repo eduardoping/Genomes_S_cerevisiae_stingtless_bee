@@ -1,0 +1,59 @@
+#!/bin/bash
+ 
+#Diretivas PBS. Especificam recursos que serao utilizados pelo job 
+ 
+#PBS -N Bora 
+#PBS -l nodes=1:ppn=23,mem=20gb,walltime=72:00:00
+#PBS -q qtime
+#PBS -m ae
+#mensagem sera enviada: a – abort; b – begin; e – end 
+#PBS -M eduardo.menezes@ufv.br 
+ 
+cd $PBS_O_WORKDIR 
+ 
+#Habilita o carregamento de modulos
+source /etc/profile.d/modules.sh 
+ 
+#Carrega os modulos
+module load samtools/1.7
+
+#Os comandos a serem executados. O seu roteiro propriamente dito.
+#Comandos a partir daqui
+
+
+#jp14
+#sort
+
+#samtools sort aligned_JP14.bam > sorted_JP14.bam
+
+#unmmaped
+samtools view -h -f 4 sorted_JP14.bam > unmmaped_JP14.bam
+
+#bam2fq
+
+#samtools bam2fq unmmaped_JP14.bam > unmapped_JP14.fastq
+
+
+samtools fastq -@ 8 unmmaped_JP14.bam \
+    -1 unmapped_JP14_R1.fastq.gz \
+    -2 unmapped_JP14_R2.fastq.gz \
+    -0 /dev/null -s /dev/null -n
+
+
+#ip9
+#sort
+#samtools sort aligned_IP9.bam > sorted_IP9.bam
+
+#unmmaped
+#samtools view -h -f 4 sorted_IP9.bam > unmmaped_IP9.bam
+
+#bam2fq
+
+#samtools bam2fq unmmaped_IP9.bam > unmapped_IP9.fastq
+
+#samtools fastq -@ 8 unmmaped_IP9.bam \
+    -1 unmapped_IP9_R1.fastq.gz \
+    -2 unmapped_IP9_R2.fastq.gz \
+    -0 /dev/null -s /dev/null -n
+
+#Fim do Script
